@@ -1,0 +1,59 @@
+
+/*--------------------------------------------------------------
+# Counter Styles
+--------------------------------------------------------------*/
+
+.single-counter{
+	.ico{
+		i{
+			font-size:30px;
+			color: $primary-color;
+		}
+		border: 1px solid #eee;
+		padding: 20px 25px;
+		border-radius: 5px;
+		@include transition();
+	}
+	&:hover{
+		cursor:pointer;
+		.ico{
+			border-color:$primary-color
+		}
+	}
+	@media(max-width:991px){
+		margin-bottom:30px;
+	}
+}
+
+.count-wrap{
+	padding-left: 20px;
+	h1{
+		font-weight: 600;
+	}
+	p{
+		margin-bottom: 0px;
+		@media(max-width:767px){
+			font-size:13px;
+		}
+	}
+}
+
+.counter-section2{
+	.ico {
+		background:$white;
+	}
+	.single-counter{
+		h1,p{
+			color:$white;
+		}
+		&:hover{
+			.ico{
+				background:transparent;
+				border-color:$white;
+				i{
+					color:$white;
+				}
+			}
+		}
+	}
+}

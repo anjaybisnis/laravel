@@ -1,0 +1,56 @@
+
+/*--------------------------------------------------------------
+# User-Download Styles
+--------------------------------------------------------------*/
+
+.single-item{
+  margin-bottom:30px;
+  padding-bottom:30px;
+  border-bottom: 1px solid #eee;
+  .details{
+    h5{
+      font-weight:600;
+      max-width:338px;
+      margin-bottom:10px;
+    }
+  }
+}
+
+@media(max-width:963px){
+  .single-item{
+    flex-direction:column;
+  }
+  .items-button{
+    margin-top:30px;
+  }
+}
+
+@media(max-width:384px){
+  .items-button{
+    a{
+      font-size:11px;
+      padding: 8px 26px;      
+    }
+  }
+}
+
+
+@media(max-width:413px){
+    .item-desc{
+      flex-direction:column;
+      .item-thumb{
+        margin-bottom:30px;
+        margin-right: 0px!important;
+      }
+      .details{
+        text-align:center;
+      }      
+    }
+}
+
+.price-details{
+  @media(max-width:963px){
+      margin-top:30px;
+  }
+}
+

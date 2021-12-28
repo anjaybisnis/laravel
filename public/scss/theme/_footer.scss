@@ -1,0 +1,137 @@
+
+/*--------------------------------------------------------------
+# Footer Styles
+--------------------------------------------------------------*/
+
+.footer-area{
+	background:#2b2a2f;
+}
+
+.footer-top-wrap{
+	border-bottom:1px solid #4a4853;
+	padding-bottom: 30px;
+	margin-bottom: 60px;
+}
+
+.single-footer-widget{
+	h4{
+		margin-bottom:30px;
+	}
+	margin-bottom:30px;
+}
+
+.newsletter-form{
+	.form-wrap{
+		background:$primary-color;
+		border-top-right-radius:20px;
+		border-bottom-right-radius:20px;
+	}
+	.form-control{
+		font-size: 12px;
+		font-weight: 300;
+		color:$white;
+		border:none;
+		border-radius: 0px;
+		background:#323137;
+		padding:0.675rem 1.4rem!important;
+		border-radius:20px;
+		&:focus{
+			box-shadow:none;
+		}
+		&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		    color: #fff;
+		    opacity: 1; /* Firefox */
+		}
+
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		    color: #fff;
+		}
+
+		&::-ms-input-placeholder { /* Microsoft Edge */
+		    color: #fff;
+		}
+	}
+	.wrap{
+		width:100%;
+		background:#2b2a2f;
+		border-top-right-radius:20px;
+		border-bottom-right-radius:20px;
+	}
+	.submit-btn{
+		box-shadow: none;
+		border:none;
+		padding: 0px 24px;		
+		background:transparent;
+		i{
+			color:$white;
+			font-weight:600;
+		}
+	}
+}
+
+.widget-menu-list{
+	li{
+		margin-bottom:15px;
+		&:last-child{
+			margin-bottom:0px;
+		}
+	}
+	a{
+		color: $text-color;
+		@include transition();
+		&:hover{
+			color:$white;
+		}
+	}
+}
+
+.footer-bottom-wrap{
+	.footer-bottom-left{
+		p{
+			a{
+				color:$primary-color;
+			}
+		}
+	}
+
+	.footer-bottom-right{
+		text-align: right;
+		ul{
+			li{
+				display: inline-block;
+				margin: 0px 5px;
+				&:last-child{
+					margin-right: 0px!important;
+				}
+				a{
+					.fa-facebook{
+						color:#4f6ea6;
+					}
+					.fa-twitter{
+						color:#2fb2f4;
+					}
+					.fa-snapchat-ghost{
+						color:#fcfa60;
+					}
+					.fa-github{
+						color:#951890;
+					}
+					.fa-slack{
+						color:#89dbc4;
+					}
+					.fa-dribbble{
+						color:#f16199;
+					}																									
+				}
+			}
+		}
+		@media(max-width:991px){
+			text-align: left!important;
+			ul li{
+				&:first-child{
+					margin-left: 0px!important;
+				}				
+			}
+		}
+	}
+}

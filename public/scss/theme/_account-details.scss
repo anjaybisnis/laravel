@@ -1,0 +1,413 @@
+
+/*--------------------------------------------------------------
+# Account Details Styles
+--------------------------------------------------------------*/
+
+.user-header{
+	height:550px;
+}
+
+
+.user-details{
+	.details{
+		p{
+			font-weight: 300;
+		}
+	}
+}
+
+.cover-section{
+	background:#f7fafc;
+	border-radius: 5px;
+	padding:20px;
+	p{
+		border-top:1px solid #eee;
+		font-weight:300;
+	}
+}
+
+.single-buyer-review{
+	border-bottom:1px solid #eee;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	.comment{
+		p{
+			margin-bottom:0px;
+		}
+	}
+	&:last-child{
+		border-bottom:none;
+		margin-bottom: 0px;
+		padding-bottom: 0px;		
+	}
+}
+
+.detail-meta{
+	h5{
+		@media(max-width:1024px){
+			max-width:250px;
+		}
+	}
+
+	a{
+		@media(max-width:954px){
+			flex-direction:column;
+			.star{
+				margin-left: 0px;
+			}
+		}
+	}
+}
+
+
+@media(max-width:954px){
+	.review-top{
+		align-items: start!important;
+	}
+}
+
+
+.single-earn-stat{
+	background:$primary-color;
+	color: $white;
+	border-radius:3px;
+	padding:40px 30px;
+	@media(max-width:991px){
+		min-height:200px;
+	}
+	@media(max-width:767px){
+		margin-bottom:30px;
+		&:last-child{
+			margin-bottom:0px;
+		}
+	}
+	h1{
+		color:$white;
+		font-weight:600;
+		margin-bottom:20px;
+		@media(max-width:991px) and (min-width:768px){
+			font-size: 25px;
+		}		
+	}
+	p{
+		font-weight:300;
+		margin-bottom:0px;
+		max-width: 230px;
+		@media(max-width:991px) and (min-width:768px){
+			font-size: 12px;
+		}
+	}
+	@media(max-width:767px){
+		margin-bottom:30px!important;
+	}
+}
+
+
+.top-country{
+	background:#f7fafc;
+	border-radius:3px;
+	padding:35px;
+	ul{
+		li{
+			border-top:1px solid #eee;
+			padding:10px 0px;
+			.price{
+				color:$black;
+				font-weight:600;
+			}
+			&:last-child{
+				padding-top:10px;
+				padding-bottom:0px;
+			}
+		}
+	}
+}
+
+.sale-table-wrap{ 
+	th{
+		border:none!important;
+		font-weight:300;
+		padding-left: 30px;
+	}
+	td{
+		border:none!important;
+		padding-left: 30px;		
+	}	
+	tr{
+		span{
+			font-weight:600;
+			color:$black;
+		}
+	}
+	.table-head{
+		background:$white;
+		th{
+			font-weight:600;
+			text-transform:uppercase;
+		}
+	}
+	.table-bottom{
+		background:$black !important;
+		color:$white !important;
+	}
+
+	.table-striped tbody tr:nth-of-type(2n+1) {
+	    background-color: #eff4f8;
+	}
+
+}
+
+.sale-graph-wrap{
+	.graph-top{
+		border-bottom:1px solid #eee;
+		margin-bottom:20px;
+		padding-bottom:20px;
+		h4{
+			margin-bottom:0px;
+			border-bottom:0px;
+			padding-bottom:0px;
+		}
+		@media(max-width:527px){
+			flex-direction:column;
+			.buttons{
+				margin-top: 10px;
+			}
+		}
+		@media(max-width:413px){
+			.buttons{
+				flex-direction:column;
+				a{
+					display:block;
+					text-align:center;
+					margin-bottom:10px;
+				}	
+			}
+		}
+	}
+	.primary-btn{
+		font-size:11px;	
+		padding: 4px 15px;
+		display:inline-table;
+		margin: 0px 2px;		
+	}
+	.white-btn{
+		color:$text-color;
+		&:hover{
+			color:$primary-color;
+			background:transparent;
+			border-color:$primary-color;
+		}
+	}
+	.dropdown-toggle{
+		padding: 7px 15px;	
+	}
+	.dropdown-item{
+		font-size:11px;
+	}		
+}
+
+
+.earning-sidebar{
+	margin-bottom:40px;
+	h4{
+		border-bottom:1px solid #eee;
+		margin-bottom:20px;
+		padding-bottom:20px;
+		font-weight:600;
+		text-transform:uppercase;
+	}
+	p{
+		font-size:12px;
+		font-weight:300;
+	}
+	.funds-wrap{
+		@media(max-width:1275px){
+			flex-direction:column;
+			.my-earning,.my-fees{
+				margin-top:10px;
+				h6{
+					margin-top:0px;
+				}
+			}
+		}
+	}
+	.title{
+		font-weight:600;
+		color:$text-color;
+	}
+	.my-earning h6,.my-fees h6{
+		margin-top:32px;
+	}
+	.my-earning h6{
+		color:#1eb405;
+	}
+	.my-fees h6{
+		color:#ff0000;
+	}
+	.print-link{
+		display:block;
+		color:$primary-color;
+		text-decoration: underline;
+		text-decoration-color: rgba(66, 176, 242, 0.5);
+		&:hover{
+			color:$primary-color;
+		}
+	}
+}
+
+.invoice-wrap{
+	@media(max-width:1300px){
+		.dropdown-wrap{
+			flex-direction:column;
+			.primary-btn{
+				display:block;
+				text-align:center;
+				margin-top:10px!important;
+			}
+		}
+	}
+	h4{
+		border-bottom:1px solid #eee;
+		margin-bottom:20px;
+		padding-bottom:20px;
+		font-weight:600;
+		text-transform:uppercase;		
+	}
+	.primary-btn{
+		border-radius: 3px; 
+		padding: 8px 15px !important;	
+		margin:0px 10px;	
+		i{
+			font-size: 16px;
+			font-weight:600;
+			vertical-align: middle;	
+		}
+	}
+	.nice-select{
+		width: 100%;
+		position: relative;
+		text-transform:uppercase;
+		font-weight:600;
+		.list{
+			width:100%;
+			li{
+				padding: 4px 18px;
+			}
+		}
+	}
+}
+
+
+.stat-wrap{
+	min-width: 740px;
+}
+
+.stat-wrap-container{
+	@media(max-width:1102px){
+		overflow-x: scroll;
+	}
+}
+
+
+.stat-table-wrap{
+
+	.primary-btn{
+		font-size:10px;
+		padding: 5px 15px;
+		@media(max-width:1024px){
+			font-size:9px;
+		}
+	}
+	.button-bottom{
+		.primary-btn{
+			margin: 0px 2px;
+			i{
+				font-weight:600;
+			}
+			&:focus{
+
+			}
+			box-shadow: none!important;			
+		}
+		padding-bottom:20px;
+		border-bottom:1px solid #eee;
+	}
+	.dropdown{
+		display:flex;
+	}
+	.dropdown-item{
+		font-size: 11px;
+	}
+	.stat-table{
+		tr{
+			background:$white;
+		}
+		thead{
+  			box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);			
+		}
+		th{
+			font-size:12px;
+			border:none;
+			font-weight:500;
+			text-transform:uppercase;
+		}
+		td{
+			font-size:12px;
+		}
+		.price{
+			font-weight:600;
+			color:$black;
+		}
+		.amount-red{
+			font-weight:600;
+			color:#ff0000;
+		}
+		.amount-green{
+			font-weight:600;
+			color:#1eb405;
+		}
+	}
+}
+
+
+.usr-menu{
+	.nice-select{
+		display:none;
+		color: #fff;
+		border-color: #DC143C !important;
+		background: #DC143C;	
+		&:after{
+			border-bottom: 2px solid #fff;
+			border-right: 2px solid #fff;
+			content: '';
+			display: block;
+			height: 10px;
+			margin-top: -6px;
+			pointer-events: none;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			width: 10px;			
+		}	
+	}
+	@media(max-width:1023px){
+		.top-nav{
+			display:none!important;
+		}
+		.nice-select{
+			display:block;
+			margin: 20px 0px;
+			width: 85%;		
+			.list{
+				width:100%;
+				color:$black;
+			}		
+		}
+		display: flex;
+		justify-content: center;	
+		padding-bottom:0px!important;
+	}
+}
+
+
+

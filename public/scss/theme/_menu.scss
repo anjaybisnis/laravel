@@ -1,0 +1,393 @@
+
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+
+.pages{
+  #header{
+    background:$white;
+  }
+}
+
+#header {
+  padding: 14px 0px;
+  padding-left:7%;
+  padding-right:7%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  @media(max-width:1024px){
+    padding-left:0px;
+    padding-right:0px;
+  }
+}
+
+
+#header.header-scrolled{
+  transition: all 0.5s;
+  background: $primary-color;
+  box-shadow: -21.213px 21.213px 30px 0px rgba(158,158,158,0.3);   
+}
+
+
+
+.login-btn{
+  @media(max-width:991px){
+    display:none!important;
+  }
+    margin-left: 30px!important;
+    background-color: transparent;
+    border:1px solid rgba($white, .25);
+    border-radius:30px;
+    color:$white!important;
+    padding: 8px 45px!important;
+    font-weight:600;
+    text-transform: uppercase;
+    font-size:12px;
+    @include transition();
+    &:hover{
+      color:$primary-color!important;
+      background:$white!important;
+    }
+  
+}
+
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  border-top:2px solid $primary-color;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: -115%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+  border-bottom: 1px solid #edf6ff;
+  &:last-child{
+    border-bottom:none;
+  }
+}
+
+/* Nav Menu Arrows */
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 10px;
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 0 8px 0px 8px;
+  text-decoration: none;
+  color: $white;
+  font-weight:600;  
+  font-size: 12px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+
+
+
+  .parent-active > .sf-with-ul{
+    color:$white;
+  }
+
+
+
+.nav-menu > li {
+  margin-left: 30px;
+}
+
+.nav-menu ul {
+  margin: 20px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 5px 10px;
+  color: #333;
+  transition: 0.3s;
+  display: block;
+  font-size: 12px;
+}
+
+
+
+.nav-menu ul ul {
+  margin-top:0;
+  margin-right: 10px;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  z-index: 999;
+  top: 20px;
+  border: 0;
+  background: none;
+  font-size: 20px;
+  display: none;
+  @include transition();
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: $white; 
+}
+
+@media (max-width: 991px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+  #nav-menu-container{
+    display:none;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.8);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  font-weight: 600;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+
+
+
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: $primary-color;
+}
+
+#mobile-nav ul .menu-has-children li a {
+  text-transform: none;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: $primary-color;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #111;
+}
+
+
+.mini-cart{
+  width: 290px;
+  box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);  
+  background: #fff;
+  position: absolute;
+  z-index: 3;
+  top: 52px;
+  border-radius:3px;
+  overflow:hidden;
+  right: 15px;
+  display: none;
+  z-index: 5;
+  .total-amount{
+    padding:25px 20px;
+    background:#f7fafc;
+    .amount{
+      font-size:24px;
+      font-weight:500;
+      color:$black;
+    }
+  }
+  .single-cart-item{
+      padding:15px 20px;
+      border-bottom:1px dashed #eee;
+      a{
+        color:$black;
+      }
+      h5{
+        font-weight:300;        
+      }
+      @include transition();
+      h6{
+        margin-top:10px;          
+      }      
+      &:hover{
+        h5{
+          a{
+            color:$primary-color;
+          }        
+        } 
+      }
+  }
+  
+  .proceed-btn{
+    padding-bottom:20px;
+    margin-top:10px;
+    & :hover{
+      background:$primary-color!important;
+      color:$white;
+    }
+  }
+
+}
+
+.top-cart{
+  @media(max-width:991px){
+    display:none!important;
+  }  
+  margin-left:40px;
+  color: $white;
+  border: 1px solid rgba($white, .25);
+  padding: 6px 10px;
+  border-radius: 50px;
+  .badge{
+      position: absolute;
+      color: $primary-color;
+      font-weight: 300;
+      border-radius: 21px;
+      padding: 4px;
+      line-height: initial;
+      top: -4px;
+      right: -12px;      
+      height: 24px;
+      width: 24px;
+  }
+}
+

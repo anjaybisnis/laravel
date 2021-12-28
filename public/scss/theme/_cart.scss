@@ -1,0 +1,243 @@
+
+/*--------------------------------------------------------------
+# Cart Styles
+--------------------------------------------------------------*/
+
+.cart-title{
+  border-bottom:1px solid #eee;
+  padding-bottom: 10px;
+  h6{
+    font-weight: 500;
+  }
+  @media(max-width:767px){
+    display:none;
+  }
+}
+
+.cart-single-item{
+  border-bottom:1px solid #eee;
+  padding:30px 0px;
+  h6{
+    font-weight:400;
+  }
+}
+
+.product-item{
+  padding-left:30px;
+}
+
+.cart-section{
+  .price,.total{
+    color:$black!important;
+  }
+
+  .view-btn{
+    border:1px solid #eee;
+    background:#f7fafc;
+    border-radius:3px;
+    color:$black;
+    font-weight:600;
+    text-transform: uppercase;
+    padding:8px 40px;
+    @include transition();
+    overflow: hidden;
+    &:hover{
+      background:$primary-color;
+      color:$white;
+      border-radius:3px;      
+    }
+    &.color-2{
+      border-radius:3px;      
+      background:$primary-color;
+      color:$white;
+    }
+  }
+}
+
+.cuppon-wrap{
+  @media(max-width:735px){
+    margin-top:20px;
+  }
+}
+
+.cupon-code{
+  input{
+    padding: 8px!important; 
+    border:1px solid #eee;
+    border-radius:3px; 
+    margin-right: -8px;     
+    &:focus{
+      box-shadow:none!important;
+    }   
+  }
+}
+
+
+.quantity-container{
+    .quantity {
+      position: relative;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button
+    {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number]
+    {
+      -moz-appearance: textfield;
+    }
+
+    .quantity input {
+      width: 80px;
+      height: 42px;
+      line-height: 1.65;
+      float: left;
+      display: block;
+      padding: 0;
+      margin: 0;
+      padding-left: 20px;
+      border: 1px solid #eee;
+      border-radius: 5px;    
+    }
+
+    .quantity input:focus {
+      outline: 0;
+    }
+
+    .quantity-nav {
+      float: left;
+      position: relative;
+      height: 42px;
+    }
+
+    .quantity-button {
+      position: relative;
+      cursor: pointer;
+      border-left: 1px solid #eee;
+      width: 30px;
+      text-align: center;
+      color: #333;
+      font-size: 13px;
+      line-height: 1.7;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    .quantity-button.quantity-up {
+      position: absolute;
+      height: 50%;
+      top: 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .quantity-button.quantity-down {
+      position: absolute;
+      bottom: -1px;
+      height: 50%;
+    }
+
+}
+
+.cupon-area {
+  padding:30px 0px;
+  border-bottom: 1px solid #eee;
+}
+
+.subtotal-area{
+  border-bottom:1px solid #eee;
+  padding:30px 0px;
+  .subtotal,.title{
+    color:$black;
+    font-size:14px;
+    font-weight:500;
+  }
+  .subtotal{
+    margin-left: 140px;
+  }
+}
+
+.shipping-area{
+  padding:20px 0px;
+  color:$black;
+  .filter-list{
+    label{
+      margin-right:10px;
+    }
+  }
+  .sorting{
+    margin-top:20px;
+    width:300px;
+    @media(max-width:414px){
+      width:210px;
+    }
+    .nice-select{
+      width:100%;
+      background:#f7fafc;
+      .current{
+        color:$text-color;      
+      }
+      .list{
+        width:100%;
+      }
+
+    }
+  }
+  .common-input{
+    width:100%;
+    margin-top: 20px;
+    background:#f7fafc;
+    color:$text-color;
+    border-color:#eee; 
+    font-size:14px;
+    padding:0.575rem 0.75rem;   
+    &:focus{
+      box-shadow:none;
+      border-color:#eee;
+    }
+  }
+}
+
+
+.checkout-area{
+  border-top: 1px solid #eee;
+  padding:20px 0px;
+  .view-btn{
+    margin-right:10px;
+    &:last-child{
+      margin-right:0px;
+    }
+  }
+  @media(max-width:523px){
+    flex-direction:column;
+    .view-btn{
+      text-align: center;
+      margin-right:0px;
+      margin-bottom:10px;
+    }
+  }
+}
+
+.shipping-form{
+  @media(max-width:413px){
+    width:210px;
+  }
+  .form-control{
+    font-size:14px;
+    font-weight:300;
+    padding: 0.575rem 0.75rem;    
+    background:#f7fafc;
+    border-color:#e8e8e8;
+    &:focus{
+      box-shadow:none;
+    }    
+  }
+}
+

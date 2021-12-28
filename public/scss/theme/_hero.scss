@@ -1,0 +1,107 @@
+
+/*--------------------------------------------------------------
+# Hero Styles
+--------------------------------------------------------------*/
+
+.hero-section{
+  background:url(../img/hero-bg1.jpg)no-repeat bottom center/cover;
+  .overlay-bg{
+    background:rgba($primary-color,.9);
+  }
+  .fullscreen{
+    height:700px!important;
+  }
+}
+
+.hero-content-wrap{
+  h1{
+    margin:30px 0px; 
+    font-weight: 600;
+  }
+  p{
+    margin-bottom: 0px;
+  }
+}
+
+.hero-img{
+  position:absolute;
+  right:0;
+  bottom:0;
+  width: 50%!important;
+  @media(max-width:1024px) and (min-width:990px){
+    width:65%!important;
+  }
+  @media(max-width:575px){
+    display:none;
+  }
+}
+
+.hero-section2{
+  background:url(../img/hero-bg2.jpg)no-repeat bottom center/cover;
+  .overlay-bg{
+    background:rgba($primary-color,.85);
+  }  
+  .fullscreen{
+    height:700px!important;
+  }
+  h1{
+    font-weight:600;
+  }
+
+  .input-group{
+    background: $white;
+    padding: 8px 15px;
+    border-radius: 35px
+  }
+  .form-control{
+    font-size:14px;
+    font-weight: 300;
+    color:$text-color;
+    &:focus{
+      box-shadow:none;
+      font-weight: 300;     
+    }
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-weight:300;
+        color: $text-color;
+        opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-weight:300;
+        color: $text-color;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        font-weight:300;
+        color: $text-color;
+    }   
+  }
+  .form-control,.btn{
+    background:transparent;
+    border:none;
+    border-radius:0px;
+  }
+  .btn{
+    i{
+      font-weight:600;
+      color:$black;
+    }
+  }
+}
+
+.common-header-sectiion{
+  background:url(../img/common-header-bg.jpg)no-repeat bottom center/cover;
+  .overlay-bg{
+    background:rgba($primary-color,.85);
+  }
+  h1{
+    font-weight:600;
+  }
+  p{
+    max-width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+  }
+}

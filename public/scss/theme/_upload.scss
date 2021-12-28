@@ -1,0 +1,141 @@
+
+/*--------------------------------------------------------------
+# Upload Styles
+--------------------------------------------------------------*/
+
+.upload-item-area{
+    .nice-select{
+      width:100%;
+      text-transform: uppercase;
+      font-weight:600;
+      .list{
+        width:100%;
+      }
+    }
+}
+
+.category-wrap{
+  background:#f7fafc;
+  padding:30px 20px;
+  border-radius:5px;
+  h6{
+      font-weight:600;
+      padding-bottom:15px;
+      text-transform:uppercase;
+      border-bottom:1px solid #eee;
+  }
+  .product-type{
+    display:grid;
+    margin-top: 20px;
+    .nice-select{
+      color:#333333;
+    }
+  }
+  .primary-btn{
+    border-radius:5px!important;
+    font-size:12px;
+    text-transform:capitalize;
+    margin-right:5px;
+    &:last-child{
+      margin-right:0px;
+    }
+  } 
+
+  @media(max-width:1358px){
+    .buttons-grp{
+      flex-direction:column;
+      text-align:center;
+      a{
+        margin-bottom:20px;
+        margin-right:0px;
+        &:last-child{
+          margin-bottom:0px;
+        }
+      }
+    }
+  }
+
+  @media(max-width:991px){
+    margin-bottom:30px;
+  } 
+}
+
+.name-desc-wrap{
+  background:#f7fafc;
+  border-radius:5px;
+  padding:30px;
+  margin-bottom:30px; 
+  p{
+    font-weight:300;
+  }
+  .form-control{
+    font-size:14px;
+    font-weight:300;
+    margin-bottom:20px; 
+  }
+  input,textarea{
+    border-color:#eee;    
+    &:focus{
+      box-shadow:none;
+      border-color:#eee;    
+    }
+  }
+  textarea{
+    min-height:160px;
+  }
+  h4{
+    border-bottom:1px solid #eee;
+    padding-bottom:20px;
+    font-weight:600;
+  }
+  .nice-select{
+    font-weight:300;
+    text-transform: capitalize;
+  }
+}
+
+.regular-price{
+  background:$white;
+  border:1px solid #eee;
+  padding:20px;
+  .form-control{
+    margin-left:5px;
+    width: 45%;    
+  }
+
+  .widths{
+    min-width:130px;
+  }
+  .recomanded-price{
+    text-align:center;
+  }
+  
+  .total-price{
+    .form-control{
+      color:$primary-color;
+      
+    }
+  }
+
+  @media(max-width:753px){
+    flex-direction:column;
+    text-align:center;
+    .form-control{
+      width:100%;
+    }
+    .reg-title{
+      margin-bottom:20px!important;
+    }
+  }
+  @media(max-width: 413px){
+    .form-control{
+      width:88%;
+    }
+  }
+
+}
+
+
+
+
+

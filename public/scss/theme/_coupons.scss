@@ -1,0 +1,98 @@
+
+/*--------------------------------------------------------------
+# Coupons Styles
+--------------------------------------------------------------*/
+
+.coupons-wrap{
+    .coupons-table{
+      th,td{
+        padding-left: 30px!important;
+        font-size:12px;
+      }
+      th{
+        border:none;  
+        text-transform:uppercase;
+        font-size: 12px;  
+        vertical-align: middle;        
+      }
+      thead{
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+      }
+      td{
+        padding: .65rem;        
+        vertical-align: middle;
+        font-weight:300;
+      }
+      tr{
+        background:$white;        
+      }
+        .primary-btn{
+          text-transform: capitalize;
+          padding:6px 20px;
+          font-weight: 400;
+          &:hover{
+            background:$primary-color;
+            color:$white;
+          }
+        }
+        .red-btn{
+          background:#de1414;
+          &:hover{
+            background:#de1414;
+            color:$white;
+            border-color:#de1414;
+          }
+        }
+        .buttons a{
+            text-align: center;          
+          @media(max-width: 1024px){
+            margin-bottom: 10px;
+          }
+        }
+
+    }
+}
+
+
+.coupons-wrap{
+  @media(max-width:991px){
+    overflow-x: scroll;
+  }
+}
+
+
+.coupons-table{
+  min-width: 800px;
+}
+
+.add-coupon-form{
+  .common-input,.nice-select{
+    border-color:transparent!important;
+    color:#333333;
+    &:focus{
+      border-color:transparent!important;
+    }
+  }
+  .nice-select{
+    .list{
+      width:100%; 
+    }   
+    .current{
+      font-weight:300;      
+      padding-left: 12px; 
+    }
+  }
+  .common-input{
+      &::placeholder {
+        color: #333333;
+        opacity: 1;
+      }
+      &:-ms-input-placeholder {
+        color: #333333;
+      }
+      &::-ms-input-placeholder {
+        color: #333333;
+      }   
+  }
+}
+
